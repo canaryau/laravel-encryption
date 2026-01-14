@@ -1,6 +1,5 @@
 {
   "name": "canaryau/laravel-encryption",
-  "version": "3.0.0",
   "description": "A package to easily encrypt & decrypt model fields in Laravel using OpenSSL.",
   "keywords": [
     "canaryau",
