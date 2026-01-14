@@ -1,8 +1,8 @@
 # Laravel Encryption
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/joelwmale/laravel-encryption.svg?style=flat-square)](https://packagist.org/packages/joelwmale/laravel-encryption)
-[![Total Downloads](https://img.shields.io/packagist/dt/joelwmale/laravel-encryption.svg?style=flat-square)](https://packagist.org/packages/joelwmale/laravel-encryption)
-![GitHub Actions](https://github.com/joelwmale/laravel-encryption/actions/workflows/main.yml/badge.svg)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/canaryau/laravel-encryption.svg?style=flat-square)](https://packagist.org/packages/canaryau/laravel-encryption)
+[![Total Downloads](https://img.shields.io/packagist/dt/canaryau/laravel-encryption.svg?style=flat-square)](https://packagist.org/packages/canaryau/laravel-encryption)
+![GitHub Actions](https://github.com/canaryau/laravel-encryption/actions/workflows/main.yml/badge.svg)
 
 A package to easily encrypt & decrypt model fields in Laravel using OpenSSL.
 
@@ -18,7 +18,7 @@ A package to easily encrypt & decrypt model fields in Laravel using OpenSSL.
 You can install the package via composer:
 
 ```bash
-composer require joelwmale/laravel-encryption
+composer require canaryau/laravel-encryption
 ```
 
 ## Usage

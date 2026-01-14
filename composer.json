@@ -1,12 +1,12 @@
 {
-  "name": "joelwmale/laravel-encryption",
-  "version": "2.1.4",
+  "name": "canaryau/laravel-encryption",
+  "version": "3.0.0",
   "description": "A package to easily encrypt & decrypt model fields in Laravel using OpenSSL.",
   "keywords": [
-    "joelwmale",
+    "canaryau",
     "laravel-encryption"
   ],
-  "homepage": "https://github.com/joelwmale/laravel-encryption",
+  "homepage": "https://github.com/canaryau/laravel-encryption",
   "license": "MIT",
   "type": "library",
   "authors": [
