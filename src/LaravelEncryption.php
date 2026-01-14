@@ -1,6 +1,6 @@
 <?php
 
-namespace Joelwmale\LaravelEncryption;
+namespace Canaryau\LaravelEncryption;
 
 class LaravelEncryption
 {

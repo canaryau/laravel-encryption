@@ -1,6 +1,6 @@
 <?php
 
-namespace Joelwmale\LaravelEncryption\Support;
+namespace Canaryau\LaravelEncryption\Support;
 
 class ParseAttributes
 {

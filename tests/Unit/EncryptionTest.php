@@ -3,7 +3,7 @@
 use Tests\Models\TestUser;
 use Illuminate\Support\Facades\DB;
 use Tests\Models\TestUserDateCast;
-use Joelwmale\LaravelEncryption\Services\EncryptService;
+use Canaryau\LaravelEncryption\Services\EncryptService;
 
 it('encrypts data', function () {
     $user = TestUser::create([

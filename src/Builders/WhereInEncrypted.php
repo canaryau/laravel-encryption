@@ -1,8 +1,8 @@
 <?php
 
-namespace Joelwmale\LaravelEncryption\Builders;
+namespace Canaryau\LaravelEncryption\Builders;
 
-use Joelwmale\LaravelEncryption\Services\EncryptService;
+use Canaryau\LaravelEncryption\Services\EncryptService;
 
 trait WhereInEncrypted
 {

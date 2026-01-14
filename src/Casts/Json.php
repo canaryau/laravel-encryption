@@ -1,6 +1,6 @@
 <?php
 
-namespace Joelwmale\LaravelEncryption\Casts;
+namespace Canaryau\LaravelEncryption\Casts;
 
 class Json
 {

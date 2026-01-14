@@ -1,11 +1,11 @@
 <?php
 
-namespace Joelwmale\LaravelEncryption\Traits;
+namespace Canaryau\LaravelEncryption\Traits;
 
-use Joelwmale\LaravelEncryption\Builders\EloquentBuilder;
-use Joelwmale\LaravelEncryption\Services\EncryptService;
-use Joelwmale\LaravelEncryption\Support\HandleCastableAttributes;
-use Joelwmale\LaravelEncryption\Support\ParseAttributes;
+use Canaryau\LaravelEncryption\Builders\EloquentBuilder;
+use Canaryau\LaravelEncryption\Services\EncryptService;
+use Canaryau\LaravelEncryption\Support\HandleCastableAttributes;
+use Canaryau\LaravelEncryption\Support\ParseAttributes;
 
 trait EncryptsAttributes
 {

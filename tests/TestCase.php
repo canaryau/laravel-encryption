@@ -5,7 +5,7 @@ namespace Tests;
 use Illuminate\Contracts\Config\Repository;
 use Orchestra\Testbench\TestCase as Orchestra;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Joelwmale\LaravelEncryption\LaravelEncryptionServiceProvider;
+use Canaryau\LaravelEncryption\LaravelEncryptionServiceProvider;
 
 class TestCase extends Orchestra
 {

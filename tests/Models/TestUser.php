@@ -4,7 +4,7 @@ namespace Tests\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Joelwmale\LaravelEncryption\Traits\EncryptsAttributes;
+use Canaryau\LaravelEncryption\Traits\EncryptsAttributes;
 
 class TestUser extends Model
 {

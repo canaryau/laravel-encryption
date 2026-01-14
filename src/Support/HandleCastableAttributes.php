@@ -1,9 +1,9 @@
 <?php
 
-namespace Joelwmale\LaravelEncryption\Support;
+namespace Canaryau\LaravelEncryption\Support;
 
-use Joelwmale\LaravelEncryption\Casts\Date;
-use Joelwmale\LaravelEncryption\Casts\Json;
+use Canaryau\LaravelEncryption\Casts\Date;
+use Canaryau\LaravelEncryption\Casts\Json;
 
 class HandleCastableAttributes
 {
@@ -23,6 +23,6 @@ class HandleCastableAttributes
             return Json::handle($value);
         }
 
-        throw new \Exception('The cast type "'.$castType.'" is not supported.');
+        throw new \Exception('The cast type "' . $castType . '" is not supported.');
     }
 }

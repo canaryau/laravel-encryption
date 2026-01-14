@@ -1,6 +1,6 @@
 <?php
 
-namespace Joelwmale\LaravelEncryption\Services;
+namespace Canaryau\LaravelEncryption\Services;
 
 class EncryptService
 {
@@ -14,7 +14,7 @@ class EncryptService
         $cipher = strtolower(config('laravel_encryption.cipher', 'AES-256-CBC'));
 
         if (! in_array($cipher, openssl_get_cipher_methods())) {
-            throw new \Exception('The cipher method "'.$cipher.'" is not supported.');
+            throw new \Exception('The cipher method "' . $cipher . '" is not supported.');
         }
 
         return $cipher;

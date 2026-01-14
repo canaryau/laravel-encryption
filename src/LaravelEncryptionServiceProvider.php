@@ -1,6 +1,6 @@
 <?php
 
-namespace Joelwmale\LaravelEncryption;
+namespace Canaryau\LaravelEncryption;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -10,16 +10,16 @@ class LaravelEncryptionServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../config/config.php' => config_path('laravel-encryption.php'),
+                __DIR__ . '/../config/config.php' => config_path('laravel_encryption.php'),
             ], 'config');
         }
     }
 
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'laravel-encryption');
+        $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'laravel_encryption');
 
-        $this->app->singleton('laravel-encryption', function () {
+        $this->app->singleton('laravel_encryption', function () {
             return new LaravelEncryption();
         });
     }

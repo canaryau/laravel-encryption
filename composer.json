@@ -33,7 +33,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Joelwmale\\LaravelEncryption\\": "src"
+      "Canaryau\\LaravelEncryption\\": "src"
     }
   },
   "autoload-dev": {
@@ -57,10 +57,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Joelwmale\\LaravelEncryption\\LaravelEncryptionServiceProvider"
+        "Canaryau\\LaravelEncryption\\LaravelEncryptionServiceProvider"
       ],
       "aliases": {
-        "LaravelEncryption": "Joelwmale\\LaravelEncryption\\LaravelEncryptionFacade"
+        "LaravelEncryption": "Canaryau\\LaravelEncryption\\LaravelEncryptionFacade"
       }
     }
   }

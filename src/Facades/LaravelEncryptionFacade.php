@@ -1,16 +1,16 @@
 <?php
 
-namespace Joelwmale\LaravelEncryption\Facades;
+namespace Canaryau\LaravelEncryption\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Joelwmale\LaravelEncryption\LaravelEncryption
+ * @see \Canaryau\LaravelEncryption\LaravelEncryption
  */
 class LaravelEncryptionFacade extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \VendorName\Skeleton\Skeleton::class;
+        return 'laravel_encryption';
     }
 }

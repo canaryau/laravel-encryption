@@ -29,7 +29,7 @@ composer require canaryau/laravel-encryption
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Joelwmale\LaravelEncryption\Traits\EncryptsAttributes;
+use Canaryau\LaravelEncryption\Traits\EncryptsAttributes;
 
 class User extends Model
 {
@@ -83,7 +83,7 @@ return [
 If you need to make any changes to the configuration, feel free to publish the configuration file.
 
 ```sh
-php artisan vendor:publish --provider="Joelwmale\LaravelEncryption\LaravelEncryptionServiceProvider"
+php artisan vendor:publish --provider="Canaryau\LaravelEncryption\LaravelEncryptionServiceProvider"
 ```
 
 ### Configure Model Attributes To Be Encrypted
@@ -115,7 +115,7 @@ protected $encryptableCasts = [
 
 #### Supported casts
 
-Cast support is still growing, and will be added as time goes on. 
+Cast support is still growing, and will be added as time goes on.
 
 - date
 - datetime

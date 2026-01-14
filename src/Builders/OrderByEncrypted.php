@@ -1,6 +1,6 @@
 <?php
 
-namespace Joelwmale\LaravelEncryption\Builders;
+namespace Canaryau\LaravelEncryption\Builders;
 
 trait OrderByEncrypted
 {
