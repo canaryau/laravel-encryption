@@ -11,6 +11,6 @@ class LaravelEncryptionFacade extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'laravel_encryption';
+        return \VendorName\Skeleton\Skeleton::class;
     }
 }
