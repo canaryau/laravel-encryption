@@ -68,19 +68,30 @@ trait EncryptsAttributes
             return;
         }
 
-        foreach ($this->getEncryptableAttributes() as $attribute) {
-            if (! empty($this->$attribute) && $this->attributeIsEncrypted($attribute)) {
-                $value = EncryptService::decrypt($this->$attribute);
+        $casts = $this->encryptableCasts ?? [];
 
-                if (! empty($this->encryptableCasts)) {
-                    $this->$attribute = HandleCastableAttributes::handle($this->encryptableCasts, $attribute, $value);
-                } else {
-                    $this->$attribute = $value;
-                }
+        foreach ($this->getEncryptableAttributes() as $attribute) {
+            if (empty($this->$attribute)) {
+                continue;
             }
+
+            // Decrypt exactly once. Earlier versions first called
+            // attributeIsEncrypted(), which decrypts the same value a second
+            // time purely to see whether it throws; it never can, so every
+            // encrypted column was being decrypted twice on hydration.
+            $value = EncryptService::decrypt($this->$attribute);
+
+            $this->$attribute = $casts === []
+                ? $value
+                : HandleCastableAttributes::handle($casts, $attribute, $value);
         }
     }
 
+    /**
+     * @deprecated openssl_decrypt() never throws, so this always returns true
+     *             for any value and is no longer used by the trait itself. It
+     *             is kept only so existing callers keep working.
+     */
     public function attributeIsEncrypted($attribute)
     {
         try {
